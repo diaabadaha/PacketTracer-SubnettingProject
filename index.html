@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ENCS3320-Course Website</title>
+    <link rel="icon" href="icon.jpg" />
+    <meta name="description" content="Webserver 23/34" />
+    <meta name="keywords" content="Webserver example" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&family=Shadows+Into+Light&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: radial-gradient(#4f46e4 15%, transparent 16%), repeating-linear-gradient(0deg, transparent 6.5%, #b3e0c9 7%, #b3e0c9 9%, transparent 10%), linear-gradient(45deg, transparent 49%, #4f46e4 49%, #4f46e4 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #4f46e4 49%, #4f46e4 51%, transparent 51%);
+            background-size: 5em 5em;
+            background-color: #b3e0c9;
+            opacity: 1;
+        }
+
+        .contain {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 355%;
+            font-family: "Shadows Into Light", cursive;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(23, 166, 255, 0.9), 0 0 30px rgba(23, 166, 255, 0.9);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 60%;
+            margin: auto;
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 240px;
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 40px;
+            margin: auto;
+        }
+
+        .card h2, .card p {
+            margin: 10px;
+        }
+
+        .field {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 950px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .card img {
+                margin: 10px 0;
+            }
+
+            .card h2, .card p {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h1>Welcome to <span class="red-text">Computer Networks</span> course</h1>
+        <div id="About-Us" class="container">
+            <div class="card">
+                <img src="Diaa.png" alt="Diaa picture" />
+                <div>
+                    <h2>Diaa Badaha</h2>
+                    <p><span class="field">ID: </span>1210478</p>
+                    <p><span class="field">Program: </span>Computer Engineering</p>
+                    <p><span class="field">Projects: </span>Large Integer Calculator using Linked Lists - ALU implementation using verilog - Pizza Order App using JavaFX</p>
+                    <p><span class="field">Skills: </span>Research Skills - Critical Thinking - Collaboration</p>
+                    <p><span class="field">Hobbies: </span>Football - Tennis - Reading</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Ghazi.png" alt="Ghazi picture" />
+                <div>
+                    <h2>Ghazi Haj-Qassem</h2>
+                    <p><span class="field">ID:</span> 1210778</p>
+                    <p><span class="field">Program: </span>Computer Engineering</p>
+                    <p><span class="field">Projects: </span>Temperature Sensing Circuit using OpAmps - Analog and Digital communication modulation and demodulation schemes using Simulink</p>
+                    <p><span class="field">Skills: </span>Research Skills - Speaking English, French and Russian - Collaboration</p>
+                    <p><span class="field">Hobbies: </span>Learning Languages - Playing Video Games - Reading</p>
+                </div>
+            </div>
+            <div class="card" style="display: flex;
+            align-items: center;
+            flex-direction: row;">
+                <img src="Omar.png" alt="Omar picture" />
+                <div>
+                    <h2>Omar Husain</h2>
+                    <p><span class="field">ID:</span> 1212739</p>
+                    <p><span class="field">Program: </span>Computer Engineering</p>
+                    <p><span class="field">Projects: </span>Design an accumulator computer - Generate Linux/Unix Command Manual using shell scripting - Finding the shortest path using trees & heap data structures</p>
+                    <p><span class="field">Skills: </span>Adaptation - Problem Solving - Effective Communication</p>
+                    <p><span class="field">Hobbies: </span>Volleyball - Football - Walking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
